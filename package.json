@@ -1,0 +1,27 @@
+{
+  "name": "chopchop-fullstack-app",
+  "version": "1.0.0",
+  "description": "FUll Stack ChopChop Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuawong96/chopchop-fullstack-app.git"
+  },
+  "author": "Ow Ling Jia & Joshua Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuawong96/chopchop-fullstack-app/issues"
+  },
+  "homepage": "https://github.com/joshuawong96/chopchop-fullstack-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
