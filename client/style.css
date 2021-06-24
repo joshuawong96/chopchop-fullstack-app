@@ -1,6 +1,12 @@
-/* Universal Styling */
+/* 
+*****************************************
+*********** Universal Styling ***********
+*****************************************
+*/
+/* Containers */
 .main-container {
-    padding: 10%;
+    padding: 50px;
+    background-color: rgb(243, 241, 241);
 }
 
 .centered {
@@ -10,12 +16,67 @@
     padding: 50px;
 }
 
+/* Text */
+.subtext {
+    font-size: 12px;
+}
+
+/* Positioning */
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Buttons */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
+}
+
+button {
+    margin: 5px;
+}
+
+/* Side-by-side containers */
+.side-by-side {
+    display: flex;
+}
+
+.left-child,
+.right-child {
+    width: 50%;
+    margin-right: 10px;
+}
+
+/* 
+*****************************************
+*************** index.html **************
+*****************************************
+*/
+.login-container {
+    background-color: white;
+    border: solid 1px #888;
+    padding: 25px;
+    width: 270px;
+    height: 385px;
+    box-sizing: border-box;
+}
+
 .left,
 .right {
     position: absolute;
     height: 100%;
     width: 50%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -29,30 +90,44 @@
     background-color: rgb(243, 241, 241);
 }
 
-/* index.html */
-.register-container {
-    background-color: white;
-    border: solid 1px #888;
-    padding: 25px;
-    width: 270px;
-    height: 385px;
-    box-sizing: border-box;
-}
-
 select,
 input[type=text],
 input[type=password] {
+    min-width: 100%;
     margin: 5px 0px;
     border-radius: 3px;
     border: 1px solid;
     padding: 10px 12px;
+    display: inline-block;
 }
 
-select,
-input[type=text] {
-    display: inline;
+input[type=checkbox] {
+    margin: 5px 5px;
 }
 
-button {
-    margin: 5px;
+/* 
+*****************************************
+************** register.html *************
+*****************************************
+*/
+.register-container {
+    background-color: white;
+    padding: 40px;
+    max-width: 650px;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#terms-and-conditions {
+    text-decoration: underline;
+    color: grey;
+}
+
+.register-complete-btn {
+    background-color: #FF5C00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

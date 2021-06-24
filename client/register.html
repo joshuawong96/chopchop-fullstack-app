@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="img/logo/favicon.ico"/>
+    <title>Chop Chop | Register</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS Sheet $ Font Awesome icons -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebd1327fc6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="register-container">
+            <img class="img-center" src="./img/logo/full-logo.png" alt="logo" width="100px" height="100px">
+            <h2 class="text-center">Create an account</h2>
+            <br>
+            <form name="registration-form" action="home.html">
+                Mobile Number <br>
+                <select name="mobile-extension" id="mobile-extension" required>
+                    <option id="singapore" value="Singapore">+65 (Singapore)</option>
+                    <option id="malaysia" value="Malaysia">+60 (Malaysia)</option>
+                </select>
+                <input type="text" placeholder="12345678" >
+
+                <div class="side-by-side">
+                    <div class="left-child">
+                        First Name<br>
+                        <input type="text" placeholder="John">
+                    </div>
+                    <div class="right-child">
+                        Last Name<br>
+                        <input type="text" placeholder="Doe">
+                    </div>
+                </div>
+
+                Set Password <br>
+                <input type="text">
+                <p class="subtext">
+                    Your password should be of length 8-12 and should contain at least 1 alphabet, 1 number, and one special character.
+                </p>
+                Confirm Password <br>
+                <input type="text">
+                <br><br>
+                <input type="checkbox">I agree with ChopChop's 
+                    <a href="terms_and_conditions.html" id="terms-and-conditions">terms & conditions.</a> 
+                
+                <br><br>
+                <button class="btn register-complete-btn">
+                    Complete Registration
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
