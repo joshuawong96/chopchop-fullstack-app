@@ -19,6 +19,7 @@
 /* Text */
 .subtext {
     font-size: 12px;
+    line-height: 15px;
 }
 
 /* Positioning */
@@ -26,6 +27,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
 }
 
 .text-center {
@@ -57,6 +59,12 @@ button {
     margin-right: 10px;
 }
 
+/* Linking to other pages */
+.link-page {
+    text-decoration: underline;
+    color: grey;
+}
+
 /* 
 *****************************************
 *************** index.html **************
@@ -66,8 +74,8 @@ button {
     background-color: white;
     border: solid 1px #888;
     padding: 25px;
-    width: 270px;
-    height: 385px;
+    width: 350px;
+    height: 420px;
     box-sizing: border-box;
 }
 
@@ -117,11 +125,6 @@ input[type=checkbox] {
     max-height: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-#terms-and-conditions {
-    text-decoration: underline;
-    color: grey;
 }
 
 .register-complete-btn {
