@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="img/chopchop logo/favicon.ico"/>
+    <link rel="shortcut icon" href="img/logo/favicon.ico"/>
     <title>Chop Chop</title>
 
     <!-- Required meta tags -->
@@ -12,38 +12,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
     <!-- CSS Sheet $ Font Awesome icons -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ebd1327fc6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="intro-banner">
-        <img src="img/chopchop logo/full-logo.png" alt="img-only-logo">
-        <h3>Remote Queuing made easy!</h3>
+    <div class="left centered" id="intro-banner">
+        <img src="img/logo/full-logo.png" alt="img-only-logo" height="250px" width="250px">
+        <br><br>
+        <h3 class="slogan">Remote Queuing made easy!</h3>
+    </div>
+    <div class="right centered" id="form-container">
+        <div class="register-container">
+            <form>
+                Mobile Number <br>
+                <select name="mobile-extension" id="mobile-extension" required>
+                    <option id="singapore" value="Singapore">+65 (Singapore)</option>
+                    <option id="malaysia" value="Malaysia">+60 (Malaysia)</option>
+                </select>
+                <input type="text" name="mobile-number" id="mobile-number" placeholder="12345678">
+                <br>
+                <label>
+                    Password <br>
+                    <input type="password" name="password" id="password">
+                </label>
+                <br>
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </form>
+            <hr>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
     </div>
 
-    <div id="form-container">
-        <form>
-            Mobile Number <br>
-            <select name="mobile-extension" id="mobile-extension" required>
-                <option id="singapore" value="Singapore">+65 (Singapore)</option>
-                <option id="malaysia" value="Malaysia">+60 (Malaysia)</option>
-            </select>
-            <input type="text" name="mobile-number" id="mobile-number" placeholder="12345678">
-            <br>
-            <label>
-                Password <br>
-                <input type="text" name="password" id="password">
-            </label>
-            <br>
-            <button type="submit" class="btn btn-primary">Log In</button>
-        </form>
-        <hr>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-    </div>
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
+

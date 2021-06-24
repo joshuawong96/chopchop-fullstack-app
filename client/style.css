@@ -1,0 +1,58 @@
+/* Universal Styling */
+.main-container {
+    padding: 10%;
+}
+
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+}
+
+.left,
+.right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+    background-color: rgb(243, 241, 241);
+}
+
+/* index.html */
+.register-container {
+    background-color: white;
+    border: solid 1px #888;
+    padding: 25px;
+    width: 270px;
+    height: 385px;
+    box-sizing: border-box;
+}
+
+select,
+input[type=text],
+input[type=password] {
+    margin: 5px 0px;
+    border-radius: 3px;
+    border: 1px solid;
+    padding: 10px 12px;
+}
+
+select,
+input[type=text] {
+    display: inline;
+}
+
+button {
+    margin: 5px;
+}
